@@ -175,22 +175,24 @@ loader.load('./font/hongson.json', (font) => {
     requestAnimationFrame(animate);
     controls.update();
 
-    // Animate texts: bay xuống và lặp lại, xuất hiện lại ở trên cùng cột
+    const totalHeight = rows * spacingY;
+    const heartAreaHeight = 60; // vùng rơi của tim, điều chỉnh nếu cần
+
+    // Animate texts: bay xuống và lặp lại mượt mà
     texts.forEach((textObj) => {
       textObj.core.position.y -= textObj.speed;
       textObj.outline.position.y -= textObj.speed;
-      if (textObj.core.position.y < -30) {
-        // Đặt lại đúng vị trí hàng trên cùng của cột đó
-        textObj.core.position.y = startY + Math.random() * 2;
-        textObj.outline.position.y = startY + Math.random() * 2;
+      if (textObj.core.position.y < -totalHeight / 2) {
+        textObj.core.position.y += totalHeight;
+        textObj.outline.position.y += totalHeight;
       }
     });
 
-    // Animate hearts
+    // Animate hearts: rơi xuống và lặp lại mượt mà
     hearts.forEach((heart) => {
       heart.position.y -= heart.userData.speed;
-      if (heart.position.y < -30) {
-        heart.position.y = 30 + Math.random() * 10;
+      if (heart.position.y < -heartAreaHeight / 2) {
+        heart.position.y += heartAreaHeight;
         heart.position.x = (Math.random() - 0.5) * 80;
         heart.position.z = (Math.random() - 0.5) * 60;
       }

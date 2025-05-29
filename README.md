@@ -30,7 +30,7 @@ Sau đó lấy thư mục `dist` để upload lên hosting.
 ### 3. Sửa đường dẫn font trong code (nếu cần)
 
 ```js
-loader.load('/fonts/hongson.json', (font) => {
+loader.load('./fonts/hongson.json', (font) => {
   // ...
 });
 ```
@@ -57,12 +57,12 @@ loader.load('/fonts/hongson.json', (font) => {
 2. Mở `index.html` bằng trình duyệt hoặc dùng Live Server (VSCode extension).
 
 ---
-###cách tạo font json
-- tìm và tải font ở [Goolefont](https://fonts.google.com/)
+## Cách tạo font json
+- tìm và tải font ở [Googlefont](https://fonts.google.com/)
 - truy cập [jsonfont](https://gero3.github.io/facetype.js/)
  - tải font ttf vừa tải về sau đó up lên và convert thành json
 
 
 ## Liên hệ & hỗ trợ
 
-Nếu gặp lỗi font, hiệu ứng hoặc cần font Việt hóa khác, hãy liên hệ người phát triển hoặc để lại issue trên repo.
+Nếu gặp lỗi font, hiệu ứng hoặc cần font Việt hóa khác, hãy liên hệ [https://www.facebook.com/meliodas98.75](MELIODAS) hoặc để lại issue trên repo.
