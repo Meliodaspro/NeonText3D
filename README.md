@@ -65,4 +65,4 @@ loader.load('./fonts/hongson.json', (font) => {
 
 ## Liên hệ & hỗ trợ
 
-Nếu gặp lỗi font, hiệu ứng hoặc cần font Việt hóa khác, hãy liên hệ [https://www.facebook.com/meliodas98.75](MELIODAS) hoặc để lại issue trên repo.
+Nếu gặp lỗi font, hiệu ứng hoặc cần font Việt hóa khác, hãy liên hệ [MELIODAS](https://www.facebook.com/meliodas98.75) hoặc để lại issue trên repo.
