@@ -1,3 +1,8 @@
+# Three.js Text Animation with Hearts
+
+## Demo
+
+![Demo Animation](demo/demo.gif)
 
 ---
 
@@ -5,7 +10,6 @@
 
 - [three.js](https://threejs.org/) (dùng qua npm hoặc CDN)
 - [postprocessing](https://github.com/vanruesc/postprocessing) (npm)
-- Font Việt hóa dạng `.json` (convert từ .ttf/.otf bằng [facetype.js](https://gero3.github.io/facetype.js/))
 
 ---
 
@@ -57,11 +61,6 @@ loader.load('./fonts/hongson.json', (font) => {
 2. Mở `index.html` bằng trình duyệt hoặc dùng Live Server (VSCode extension).
 
 ---
-## Cách tạo font json
-- tìm và tải font ở [Googlefont](https://fonts.google.com/)
-- truy cập [jsonfont](https://gero3.github.io/facetype.js/)
- - tải font ttf vừa tải về sau đó up lên và convert thành json
-
 
 ## Liên hệ & hỗ trợ
 
