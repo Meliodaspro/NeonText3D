@@ -56,6 +56,7 @@ loader.load('./font/hongson.json', (font) => {
   const texts = [];
   // Reduce text count on mobile
   const textCount = isMobile ? 10 : 15;
+  // ENCODE_MESSAGES
   const messages = [
     "Nguyễn Phương Uyên ♡",
     "Hồng Sơn ♡ Phương Uyên",

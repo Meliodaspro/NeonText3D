@@ -1,0 +1,34 @@
+{
+  "compress": {
+    "dead_code": true,
+    "drop_console": true,
+    "drop_debugger": true,
+    "pure_funcs": ["console.log", "console.info", "console.debug"],
+    "passes": 3,
+    "unsafe": true,
+    "unsafe_arrows": true,
+    "unsafe_comps": true,
+    "unsafe_Function": true,
+    "unsafe_math": true,
+    "unsafe_methods": true,
+    "unsafe_proto": true,
+    "unsafe_regexp": true,
+    "unsafe_undefined": true
+  },
+  "mangle": {
+    "toplevel": true,
+    "reserved": [],
+    "properties": {
+      "regex": "^_"
+    }
+  },
+  "output": {
+    "beautify": false,
+    "comments": false
+  },
+  "sourceMap": {
+    "filename": "index.min.js.map",
+    "url": "index.min.js.map",
+    "includeSources": true
+  }
+} 

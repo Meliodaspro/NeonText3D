@@ -4,6 +4,27 @@
 
 ![Demo Animation](demo/demo.gif)
 
+## Build & Protection
+
+Để build và bảo vệ code:
+
+```bash
+# Cài đặt dependencies
+npm install
+
+# Build và obfuscate code
+npm run build
+```
+
+Code sau khi build sẽ được:
+- Minify và obfuscate
+- Mã hóa strings
+- Bảo vệ source map
+- Xóa console logs
+- Thêm các lớp bảo vệ khác
+
+Output sẽ nằm trong thư mục `dist/`.
+
 ---
 
 ## Các thư viện cần thiết
